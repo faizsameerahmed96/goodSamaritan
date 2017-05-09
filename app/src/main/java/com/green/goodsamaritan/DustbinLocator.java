@@ -130,6 +130,7 @@ public class DustbinLocator extends AppCompatActivity {
                 }
             } else {
                 Toast.makeText(DustbinLocator.this, "Location was not selected", Toast.LENGTH_LONG).show();
+                ApplicationUtils.showLoading(DustbinLocator.this, false);
             }
         }
     }

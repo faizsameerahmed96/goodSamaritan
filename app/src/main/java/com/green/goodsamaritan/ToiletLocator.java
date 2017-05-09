@@ -130,6 +130,7 @@ public class ToiletLocator extends AppCompatActivity {
                 }
             } else {
                 Toast.makeText(ToiletLocator.this, "Location was not selected", Toast.LENGTH_LONG).show();
+                ApplicationUtils.showLoading(ToiletLocator.this, false);
             }
         }
     }
