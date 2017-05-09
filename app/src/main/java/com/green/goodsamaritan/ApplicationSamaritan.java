@@ -1,5 +1,8 @@
 package com.green.goodsamaritan;
 
+import android.content.Context;
+import android.support.multidex.MultiDex;
+
 import com.parse.Parse;
 
 /**
@@ -17,4 +20,11 @@ public class ApplicationSamaritan extends android.app.Application {
         );
 
     }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
 }
